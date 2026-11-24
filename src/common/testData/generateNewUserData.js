@@ -15,3 +15,35 @@ export function generateNewUserData(logger = null) {
   }
   return user;
 }
+
+export function generateNewUsername() {
+  const firstName = faker.person.firstName();
+  const lastName = faker.person.lastName();
+  const newUsername = `${firstName}_${lastName}`.replaceAll(`'`).toLowerCase();
+
+  return newUsername;
+}
+
+export function generateNewEmail() {
+  const newEmail = faker.internet.email().toLowerCase();
+
+  return newEmail;
+}
+
+export function generateNewPassword() {
+  const newPassword = faker.internet.password();
+
+  return newPassword;
+}
+
+export function generateBio() {
+  const bio = faker.lorem.sentences(3);
+
+  return bio;
+}
+
+export function generateUrlPicture() {
+  const url = faker.image.url();
+
+  return url;
+}
