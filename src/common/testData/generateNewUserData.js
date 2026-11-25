@@ -5,7 +5,7 @@ export function generateNewUserData(logger = null) {
   const lastName = faker.person.lastName();
 
   const user = {
-    username: `${firstName}_${lastName}`.replaceAll(`'`).toLowerCase(),
+    username: `${firstName}_${lastName}`.replaceAll(`'`, '').toLowerCase(),
     email: `${firstName}_${faker.internet.email()}`.toLowerCase(),
     password: faker.internet.password(),
   };
@@ -19,7 +19,7 @@ export function generateNewUserData(logger = null) {
 export function generateNewUsername() {
   const firstName = faker.person.firstName();
   const lastName = faker.person.lastName();
-  const newUsername = `${firstName}_${lastName}`.replaceAll(`'`).toLowerCase();
+  const newUsername = `${firstName}_${lastName}`.replaceAll(`'`, '').toLowerCase();
 
   return newUsername;
 }

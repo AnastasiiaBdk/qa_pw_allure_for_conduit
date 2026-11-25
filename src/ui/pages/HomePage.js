@@ -40,7 +40,7 @@ export class HomePage {
   }
 
   async assertSignUpIconIsVisible() {
-    await this.step(`Assert that 'Sign Out' icon is visible`, async() => {
+    await this.step(`Assert that 'Sign Up' icon is visible`, async() => {
       await expect(this.signUpIcon).toBeVisible();
     });
   }

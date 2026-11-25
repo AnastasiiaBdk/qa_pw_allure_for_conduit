@@ -7,7 +7,7 @@ test.beforeEach(async({page, user}) => {
     await signUpUser(page, user);
 });
 
-test('Add Profile picture from Settings', async({ page, homePage}) => {
+test('Add profile picture URL from Settings', async({ page, homePage}) => {
     const settingsPage = new SettingsPage(page);
     const userPage = new UserPage(page);
     const url = 'https://wallartprints-bt.myshopify.com/cdn/shop/files/lake-moraine-nature-pictures-45364998.jpg';
