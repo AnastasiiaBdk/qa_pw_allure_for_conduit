@@ -8,7 +8,7 @@ test.beforeEach(async({page, user}) => {
     await signUpUser(page, user);
 });
 
-test('Add short bio from Settings', async({ page, homePage}) => {
+test('Add short bio from settings', async({ page, homePage}) => {
     const settingsPage = new SettingsPage(page);
     const userPage = new UserPage(page);
     const bio = generateBio();

@@ -5,7 +5,7 @@ import { generateNewEmail } from '../../../src/common/testData/generateNewUserDa
 import { generateNewUserData } from '../../../src/common/testData/generateNewUserData';
 
 
-test('Update Email from Settings', async({ page, homePage, signInPage}) => {
+test('Update Email from settings', async({ page, homePage, signInPage}) => {
     const user = generateNewUserData();
     const settingsPage = new SettingsPage(page);
     const newEmail = generateNewEmail();

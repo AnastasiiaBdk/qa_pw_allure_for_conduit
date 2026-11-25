@@ -4,7 +4,7 @@ import { SettingsPage } from '../../../src/ui/pages/SettingsPage';
 import { generateNewPassword } from '../../../src/common/testData/generateNewUserData';
 import { generateNewUserData } from '../../../src/common/testData/generateNewUserData';
 
-test('Update Password from Settings', async({ page, homePage, signInPage}) => {
+test('Update Password from settings', async({ page, homePage, signInPage}) => {
 
     const user = generateNewUserData();
     const settingsPage = new SettingsPage(page);

@@ -8,7 +8,7 @@ test.beforeEach(async({page, user}) => {
     await signUpUser(page, user);
 });
 
-test('Update Username from Settings', async({ page, homePage}) => {
+test('Update Username from settings', async({ page, homePage}) => {
     const settingsPage = new SettingsPage(page);
     const userPage = new UserPage(page);
     const newUsername = generateNewUsername();
